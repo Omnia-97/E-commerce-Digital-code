@@ -8,7 +8,7 @@ class AppStyles{
   static TextStyle hintTextStyle = GoogleFonts.poppins(
     fontSize: 12.sp,
     fontWeight: FontWeight.w400,
-    color: AppColors.hintTextColor,
+    color: AppColors.lightGrayColor,
   );
   static TextStyle buttonTextStyle = GoogleFonts.poppins(
     fontSize: 14.sp,

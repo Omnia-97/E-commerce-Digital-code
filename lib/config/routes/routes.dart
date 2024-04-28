@@ -1,5 +1,7 @@
 import 'package:digital_code_company_task/config/routes/page_routes_name.dart';
 import 'package:digital_code_company_task/features/log_in/presentation/pages/log_in.dart';
+import 'package:digital_code_company_task/features/register/presentation/pages/register.dart';
+import 'package:digital_code_company_task/layout_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRoutes {
@@ -8,6 +10,16 @@ class AppRoutes {
       case PagesRouteName.logIn:
         return MaterialPageRoute(
           builder: (context) => const LogInPage(),
+          settings: settings,
+        );
+      case PagesRouteName.register:
+        return MaterialPageRoute(
+          builder: (context) => const RegisterPage(),
+          settings: settings,
+        );
+      case PagesRouteName.layout:
+        return MaterialPageRoute(
+          builder: (context) => const LayoutScreen(),
           settings: settings,
         );
       default:

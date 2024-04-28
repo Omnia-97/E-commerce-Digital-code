@@ -1,3 +1,4 @@
+import 'package:digital_code_company_task/config/routes/page_routes_name.dart';
 import 'package:digital_code_company_task/core/components/custom_button.dart';
 import 'package:digital_code_company_task/core/components/custom_text_form_field.dart';
 import 'package:digital_code_company_task/core/utils/app_images.dart';
@@ -24,20 +25,33 @@ class LogInPage extends StatelessWidget {
             ),
             customTextFormField(
               hintText: AppStrings.emailHintText,
+              keyboardType: TextInputType.emailAddress,
               prefixIcon: AppImages.icEmail,
               padding: EdgeInsets.only(left: 18.w, right: 10.w),
             ),
-            SizedBox(height: 8.h,),
+            SizedBox(
+              height: 8.h,
+            ),
             customTextFormField(
               hintText: AppStrings.passwordHintText,
+              keyboardType: TextInputType.text,
+              isPassword: true,
               prefixIcon: AppImages.icPassword,
               padding: EdgeInsets.only(left: 16.w, right: 10.w),
             ),
-            SizedBox(height: 16.h,),
+            SizedBox(
+              height: 16.h,
+            ),
             customButton(buttonText: AppStrings.logInButtonText),
-            SizedBox(height: 31.h,),
-            navigateText(text: AppStrings.dontHaveAnAccount, navigateText: AppStrings.register),
-
+            SizedBox(
+              height: 31.h,
+            ),
+            navigateText(
+                text: AppStrings.dontHaveAnAccount,
+                navigateText: AppStrings.register,
+                onTap: () {
+                  Navigator.pushNamed(context, PagesRouteName.register);
+                }),
           ],
         ),
       ),
