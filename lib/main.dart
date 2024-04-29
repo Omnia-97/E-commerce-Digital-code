@@ -5,9 +5,6 @@ import 'package:provider/provider.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => MyProvider(),
-      child: const ECommerceApp(),
-    ),
+    const ECommerceApp(),
   );
 }
