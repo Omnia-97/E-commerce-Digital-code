@@ -42,9 +42,12 @@ class LogInPage extends StatelessWidget {
             SizedBox(
               height: 16.h,
             ),
-            customButton(buttonText: AppStrings.logInButtonText, onTap: (){
-              Navigator.pushNamedAndRemoveUntil(context, PagesRouteName.layout, (route) => false);
-            }),
+            customButton(
+                buttonText: AppStrings.logInButtonText,
+                onTap: () {
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, PagesRouteName.layout, (route) => false);
+                }),
             SizedBox(
               height: 31.h,
             ),

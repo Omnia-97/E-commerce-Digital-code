@@ -101,7 +101,7 @@ class LayoutScreen extends StatelessWidget {
               activeIcon: SvgPicture.asset(
                 height: 18.w,
                 AppImages.icExplore,
-                 colorFilter: const ColorFilter.mode(
+                colorFilter: const ColorFilter.mode(
                     AppColors.primaryColor, BlendMode.srcIn),
               ),
               label: AppStrings.exploreText,
@@ -117,8 +117,8 @@ class LayoutScreen extends StatelessWidget {
                 child: SvgPicture.asset(
                   AppImages.icCart,
                   height: 18.w,
-                   colorFilter: const ColorFilter.mode(
-                    AppColors.lightGrayColor, BlendMode.srcIn),
+                  colorFilter: const ColorFilter.mode(
+                      AppColors.lightGrayColor, BlendMode.srcIn),
                 ),
               ),
               activeIcon: Badge(
@@ -131,8 +131,8 @@ class LayoutScreen extends StatelessWidget {
                 child: SvgPicture.asset(
                   AppImages.icCart,
                   height: 18.w,
-                   colorFilter: const ColorFilter.mode(
-                    AppColors.primaryColor, BlendMode.srcIn),
+                  colorFilter: const ColorFilter.mode(
+                      AppColors.primaryColor, BlendMode.srcIn),
                 ),
               ),
               label: AppStrings.cartText,
@@ -141,7 +141,7 @@ class LayoutScreen extends StatelessWidget {
               icon: SvgPicture.asset(
                 height: 18.w,
                 AppImages.icOffer,
-                 colorFilter: const ColorFilter.mode(
+                colorFilter: const ColorFilter.mode(
                     AppColors.lightGrayColor, BlendMode.srcIn),
               ),
               activeIcon: SvgPicture.asset(
@@ -155,13 +155,13 @@ class LayoutScreen extends StatelessWidget {
               icon: SvgPicture.asset(
                 height: 18.w,
                 AppImages.icProfile,
-                 colorFilter: const ColorFilter.mode(
+                colorFilter: const ColorFilter.mode(
                     AppColors.lightGrayColor, BlendMode.srcIn),
               ),
               activeIcon: SvgPicture.asset(
                 height: 18.w,
                 AppImages.icProfile,
-                 colorFilter: const ColorFilter.mode(
+                colorFilter: const ColorFilter.mode(
                     AppColors.primaryColor, BlendMode.srcIn),
               ),
               label: AppStrings.profileText,

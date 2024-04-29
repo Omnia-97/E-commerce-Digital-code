@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-class AppColors{
+class AppColors {
   static const Color primaryColor = Color(0xffFEC34E);
   static const Color whiteColor = Color(0xFFFFFFFF);
   static const Color lightGrayColor = Color(0xFF9098B1);
@@ -12,7 +12,6 @@ class AppColors{
   static const Color blackColor = Color(0xFF000000);
   static const Color categoryItemColor = Color(0xFFBCBCBC);
   static const Color productNameColor = Color(0xFF223263);
-  static  Color dotColor = const Color(0xFF8F8C86).withOpacity(0.15);
+  static Color dotColor = const Color(0xFF8F8C86).withOpacity(0.15);
   static Color buttonShadow = const Color(0xFF40BFFF).withOpacity(0.24);
-
 }

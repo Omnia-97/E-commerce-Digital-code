@@ -46,11 +46,11 @@ Widget customTextFormField({
           ),
         ),
         prefixIcon: Padding(
-          padding:  padding,
+          padding: padding,
           child: SvgPicture.asset(
             prefixIcon,
             width: 24.w,
-              height: 24.h,
+            height: 24.h,
           ),
         ),
       ),

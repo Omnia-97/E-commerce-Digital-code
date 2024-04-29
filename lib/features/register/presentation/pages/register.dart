@@ -69,9 +69,12 @@ class RegisterPage extends StatelessWidget {
             SizedBox(
               height: 16.h,
             ),
-            customButton(buttonText: AppStrings.signUpButtonText, onTap: (){
-              Navigator.pushNamedAndRemoveUntil(context, PagesRouteName.layout, (route) => false);
-            }),
+            customButton(
+                buttonText: AppStrings.signUpButtonText,
+                onTap: () {
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, PagesRouteName.layout, (route) => false);
+                }),
             SizedBox(
               height: 24.h,
             ),

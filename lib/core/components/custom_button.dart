@@ -24,10 +24,9 @@ Widget customButton({
       ],
     ),
     child: InkWell(
-      onTap: onTap ,
+      onTap: onTap,
       child: Text(
         buttonText,
-
         style: AppStyles.buttonTextStyle,
       ),
     ),

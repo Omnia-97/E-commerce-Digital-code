@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ProductItem extends StatelessWidget {
-  ProductItem(
+  const ProductItem(
       {super.key,
       required this.homeModel,
       required this.width,
@@ -16,7 +16,7 @@ class ProductItem extends StatelessWidget {
   final HomeModel homeModel;
   final double width;
   final double height;
-  bool isFavorite;
+  final bool isFavorite;
 
   @override
   Widget build(BuildContext context) {

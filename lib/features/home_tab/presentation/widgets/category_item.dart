@@ -16,7 +16,7 @@ class CategoryItem extends StatelessWidget {
     return Container(
       width: 104.w,
       height: 65.h,
-      padding: EdgeInsets.only(top: 46.h,left: 9.w),
+      padding: EdgeInsets.only(top: 46.h, left: 9.w),
       //alignment: Alignment.bottomCenter,
       decoration: BoxDecoration(
         color: AppColors.categoryItemColor,

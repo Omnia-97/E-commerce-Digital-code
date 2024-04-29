@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'app_colors.dart';
 
-class AppStyles{
+class AppStyles {
   static TextStyle hintTextStyle = GoogleFonts.poppins(
     fontSize: 12.sp,
     fontWeight: FontWeight.w400,

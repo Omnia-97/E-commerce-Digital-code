@@ -7,6 +7,7 @@ void main() {
   runApp(
     ChangeNotifierProvider(
       create: (context) => MyProvider(),
-        child: const ECommerceApp()),
+      child: const ECommerceApp(),
+    ),
   );
 }

@@ -7,7 +7,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/utils/app_strings.dart';
 
 class CustomGridView extends StatelessWidget {
-   CustomGridView({super.key});
+  CustomGridView({super.key});
 
   final List<HomeModel> productsList = [
     const HomeModel(
@@ -37,10 +37,15 @@ class CustomGridView extends StatelessWidget {
           crossAxisCount: 2,
           crossAxisSpacing: 13.w,
           mainAxisSpacing: 12.h,
-          childAspectRatio: 4/6.45,
+          childAspectRatio: 4 / 6.45,
         ),
         itemBuilder: (context, index) {
-          return ProductItem(homeModel: productsList[index],width: 156.w,height: 270.h,isFavorite: false, );
+          return ProductItem(
+            homeModel: productsList[index],
+            width: 156.w,
+            height: 270.h,
+            isFavorite: false,
+          );
         },
         itemCount: 4,
       ),

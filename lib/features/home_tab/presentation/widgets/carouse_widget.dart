@@ -29,15 +29,15 @@ class _CarouselWidgetState extends State<CarouselWidget> {
               Container(
                 width: 335.w,
                 height: 147.h,
-                decoration:  BoxDecoration(
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(11.r),
-                  image: DecorationImage(
+                  image: const DecorationImage(
                     image: AssetImage(AppImages.promotionImage),
                     fit: BoxFit.cover,
                   ),
                 ),
                 child: Padding(
-                  padding:  EdgeInsets.only(top: 23.h, left: 8.w),
+                  padding: EdgeInsets.only(top: 23.h, left: 8.w),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -46,7 +46,7 @@ class _CarouselWidgetState extends State<CarouselWidget> {
                         style: AppStyles.saleTextStyle,
                       ),
                       Padding(
-                        padding:  EdgeInsets.only(left: 3.w),
+                        padding: EdgeInsets.only(left: 3.w),
                         child: Text(
                           AppStrings.offText,
                           style: AppStyles.offerTextStyle,
