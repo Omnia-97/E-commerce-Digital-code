@@ -1,16 +1,11 @@
-# digital_code_company_task
+# online_store_task
 
-A new Flutter project.
 
-## Getting Started
+# 👋🏼 Hi there!
+ 
+- Check out this simple Flutter project I've developed. It consists of three main screens: login, signup, and the home page for online store.
+ 
+- The focus in this project was primarily on UI design, with basic logic handling. Cleanliness and simplicity in the code were considered to facilitate understanding and maintenance in the future.
+ 
+- Feel free to provide any feedback or suggestions to improve the project. Thanks! 🚀
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
