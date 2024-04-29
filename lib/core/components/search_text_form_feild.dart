@@ -14,6 +14,7 @@ Widget searchTextFormField() {
       cursorColor: AppColors.primaryColor,
       style: const TextStyle(color: AppColors.primaryColor),
       decoration: InputDecoration(
+        contentPadding: EdgeInsets.only(top: 8.h,left: 0),
         filled: true,
         fillColor: Colors.transparent,
         hintText: 'Search Product',
@@ -45,10 +46,11 @@ Widget searchTextFormField() {
             left: 17.w,
             right: 5.w,
           ),
-          child: SvgPicture.asset(
-            AppImages.icSearch,
-            width: 14.w,
-            height: 14.h,
+          child: Padding(
+            padding:  EdgeInsets.only(top: 11.h,bottom: 11.h),
+            child: SvgPicture.asset(
+              AppImages.icSearch,
+            ),
           ),
         ),
       ),

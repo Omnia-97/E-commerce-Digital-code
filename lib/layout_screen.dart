@@ -1,5 +1,7 @@
 import 'package:digital_code_company_task/core/components/search_text_form_feild.dart';
+import 'package:digital_code_company_task/core/utils/app_colors.dart';
 import 'package:digital_code_company_task/core/utils/app_images.dart';
+import 'package:digital_code_company_task/core/utils/app_strings.dart';
 import 'package:digital_code_company_task/features/cart_tab/presentation/pages/cart_tab.dart';
 import 'package:digital_code_company_task/features/explore_tab/presentation/pages/explore_tab.dart';
 import 'package:digital_code_company_task/features/home_tab/presentation/pages/home_tab.dart';
@@ -19,44 +21,161 @@ class LayoutScreen extends StatelessWidget {
     int selectedIndex = Provider.of<MyProvider>(context).selectedIndex;
     return Scaffold(
       appBar: AppBar(
-        title: Row(children: [
-          searchTextFormField(),
-
-        ],),
-
+        toolbarHeight: 66.h,
+        title: Padding(
+          padding: EdgeInsets.only(
+            top: 13.h,
+          ),
+          child: Row(
+            children: [
+              searchTextFormField(),
+              SizedBox(
+                width: 14.w,
+              ),
+              Container(
+                width: 37.w,
+                height: 37.h,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: AppColors.containerColor,
+                  image: DecorationImage(
+                    image: AssetImage(
+                      AppImages.filterImage,
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: 10.w,
+              ),
+              Badge(
+                padding: EdgeInsets.zero,
+                smallSize: 8.w,
+                backgroundColor: AppColors.badgeColor,
+                child: SvgPicture.asset(
+                  AppImages.icNotify,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
       bottomNavigationBar: Container(
         height: 74.h,
         margin: EdgeInsets.zero,
         padding: EdgeInsets.zero,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15.r),
-        ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(15.r),
-          child: BottomNavigationBar(
-           // iconSize: 24.h,
-            //selectedFontSize: 0,
-            //unselectedFontSize: 0,
-            currentIndex: selectedIndex,
-            onTap: (index) {
-             Provider.of<MyProvider>(context).setIndex(index);
-            },
-            items:  [
-              BottomNavigationBarItem(
-                  icon: SvgPicture.asset(AppImages.icHome),
-                  label: 'Home',),
-            ],
+          color: Colors.transparent,
+          border: BorderDirectional(
+            top: BorderSide(color: AppColors.borderColor, width: 1.w),
           ),
+        ),
+        child: BottomNavigationBar(
+          currentIndex: selectedIndex,
+          onTap: (index) {
+            Provider.of<MyProvider>(context, listen: false).setIndex(index);
+          },
+          items: [
+            BottomNavigationBarItem(
+              icon: SvgPicture.asset(
+                height: 18.w,
+                AppImages.icHome,
+                colorFilter: const ColorFilter.mode(
+                    AppColors.lightGrayColor, BlendMode.srcIn),
+              ),
+              activeIcon: SvgPicture.asset(
+                height: 18.w,
+                AppImages.icHome,
+                colorFilter: const ColorFilter.mode(
+                    AppColors.primaryColor, BlendMode.srcIn),
+              ),
+              label: AppStrings.homeText,
+            ),
+            BottomNavigationBarItem(
+              icon: SvgPicture.asset(
+                height: 18.w,
+                AppImages.icExplore,
+                colorFilter: const ColorFilter.mode(
+                    AppColors.lightGrayColor, BlendMode.srcIn),
+              ),
+              activeIcon: SvgPicture.asset(
+                height: 18.w,
+                AppImages.icExplore,
+                 colorFilter: const ColorFilter.mode(
+                    AppColors.primaryColor, BlendMode.srcIn),
+              ),
+              label: AppStrings.exploreText,
+            ),
+            BottomNavigationBarItem(
+              icon: Badge(
+                backgroundColor: AppColors.badgeColor,
+                alignment: Alignment.topRight,
+                smallSize: 20.w,
+                label: const Text(
+                  '2',
+                ),
+                child: SvgPicture.asset(
+                  AppImages.icCart,
+                  height: 18.w,
+                   colorFilter: const ColorFilter.mode(
+                    AppColors.lightGrayColor, BlendMode.srcIn),
+                ),
+              ),
+              activeIcon: Badge(
+                backgroundColor: AppColors.badgeColor,
+                smallSize: 20.w,
+                alignment: Alignment.topRight,
+                label: const Text(
+                  '2',
+                ),
+                child: SvgPicture.asset(
+                  AppImages.icCart,
+                  height: 18.w,
+                   colorFilter: const ColorFilter.mode(
+                    AppColors.primaryColor, BlendMode.srcIn),
+                ),
+              ),
+              label: AppStrings.cartText,
+            ),
+            BottomNavigationBarItem(
+              icon: SvgPicture.asset(
+                height: 18.w,
+                AppImages.icOffer,
+                 colorFilter: const ColorFilter.mode(
+                    AppColors.lightGrayColor, BlendMode.srcIn),
+              ),
+              activeIcon: SvgPicture.asset(
+                AppImages.icOffer,
+                colorFilter: const ColorFilter.mode(
+                    AppColors.primaryColor, BlendMode.srcIn),
+              ),
+              label: 'Offer',
+            ),
+            BottomNavigationBarItem(
+              icon: SvgPicture.asset(
+                height: 18.w,
+                AppImages.icProfile,
+                 colorFilter: const ColorFilter.mode(
+                    AppColors.lightGrayColor, BlendMode.srcIn),
+              ),
+              activeIcon: SvgPicture.asset(
+                height: 18.w,
+                AppImages.icProfile,
+                 colorFilter: const ColorFilter.mode(
+                    AppColors.primaryColor, BlendMode.srcIn),
+              ),
+              label: AppStrings.profileText,
+            ),
+          ],
         ),
       ),
       body: tabs[selectedIndex],
-
     );
   }
 }
+
 List<Widget> tabs = [
-  const HomeTab(),
+  HomeTab(),
   const ExploreTab(),
   const CartTab(),
   const OfferTab(),
