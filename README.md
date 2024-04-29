@@ -1,7 +1,7 @@
 # online_store_task
 
 
-# 👋🏼 Hi there!
+#👋🏼 Hi there!
  
 - Check out this simple Flutter project I've developed. It consists of three main screens: login, signup, and the home page for online store.
  
