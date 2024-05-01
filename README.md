@@ -15,11 +15,9 @@
 </div>
 
 <div style="display: flex; justify-content: space-between; margin-top: 20px;">
-    <div style="display: flex;">
         <img src="https://github.com/Omnia-97/onLine-Store-Digital-code/blob/master/assets/screen_shot/home2.png" height="400">
         <img src="https://github.com/Omnia-97/onLine-Store-Digital-code/blob/master/assets/screen_shot/home3.png" height="400">
-    </div>
-    <img src="https://github.com/Omnia-97/onLine-Store-Digital-code/blob/master/assets/screen_shot/home4.png" height="400">
+       <img src="https://github.com/Omnia-97/onLine-Store-Digital-code/blob/master/assets/screen_shot/home4.png" height="400">
 </div>
 
 
