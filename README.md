@@ -7,7 +7,7 @@
  
 - Feel free to provide any feedback or suggestions to improve the project. Thanks! 🚀
 
-  # 📸 ScreenShots
+# 📸 ScreenShots
 <div style="display: flex; justify-content: space-between;">
     <img src="https://github.com/Omnia-97/onLine-Store-Digital-code/blob/master/assets/screen_shot/login.png" height="400">
     <img src="https://github.com/Omnia-97/onLine-Store-Digital-code/blob/master/assets/screen_shot/sign_up.png" height="400">
